@@ -5,7 +5,8 @@ class Show < ActiveRecord::Base
   end 
   
   def Show::most_popular_show 
-    Show.highest_rating
+    num = Show::highest_rating
+    Show.find_by(rating: num)
   end 
   
   def Show::lowest_rating
