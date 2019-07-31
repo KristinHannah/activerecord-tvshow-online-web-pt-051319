@@ -11,7 +11,7 @@ class RecreateShows < ActiveRecord::Migration[5.2]
       t.string :network
       t.string :day 
       t.integer :rating 
-      t.
+      t.string :season
   end     
   end 
   
